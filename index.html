@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>4-12 順番に現れる（CSS-JS）</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+<link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/4-12/css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/4-12.css">
+
+</head>
+
+<body>
+<p>順番に現れる（CSS-JS）</p>
+
+<ul class="flex delayScroll">
+    <li class="box">順番に表示 ふわっ</li>
+    <li class="box">順番に表示 ふわっ</li>
+    <li class="box">順番に表示 ふわっ</li>
+</ul>
+    <br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓スクロール後に順番に出る<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓
+
+
+<!--スクロールしてふわっ-->
+<ul class="flex delayScroll">
+    <li class="box">順番に表示 ふわっ</li>
+    <li class="box">順番に表示 ふわっ</li>
+    <li class="box">順番に表示 ふわっ</li>
+</ul>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!--自作のJS-->
+<script src="js/4-12.js"></script>
+</body>
+</html>

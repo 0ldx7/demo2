@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/*========= レイアウトのためのCSS ===============*/
+body {
+  overflow: hidden;
+}
+
+.flex{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.box{
+  width: 220px;
+  padding: 20px;
+    margin: 0 20px 20px 20px;
+  background: #666;
+  color: #fff;
+  box-sizing:border-box;
+    list-style: none;
+}
+
+/*==================================================
+スタート時は要素自体を透過0にするためのopacity:0;を指定する
+===================================*/
+
+.box{
+  opacity: 0;
+}
+
+/*==================================================
+ふわっ
+===================================*/
+
+.fadeUp {
+animation-name:fadeUpAnime;
+animation-duration:0.5s;
+animation-fill-mode:forwards;
+opacity: 0;
+}
+
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+  transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+  transform: translateY(0);
+  }
+}
